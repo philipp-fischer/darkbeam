@@ -74,6 +74,25 @@ font:
     id: large_font
     size: 44  # Large font for time (Roboto built-in)
 
+light:
+  - platform: neopixelbus
+    name: "Darkbeam LED"
+    type: GRB
+    variant: SK6812
+    pin: GPIO27
+    num_leds: 1
+    
+
+binary_sensor:
+  - platform: gpio
+    name: "Darkbeam Button"
+    pin:
+      number: GPIO39
+      inverted: true
+      mode:
+        input: true
+    filters:
+      - delayed_on: 10ms
 
 display:
   - platform: ssd1306_i2c
