@@ -35,7 +35,7 @@ If you are using Darkbeam with Home Assistant, you can also display the value of
 ## Use with micropython
 The advantage of using the micropython firmware is that you are not limited to the drawing routines that the ESPHome display component provides.
 You'll be able to change the display brightness and other settings on the fly without re-flashing the firmware.
-When implemented as a streaming device, you can stream arbitrary image and video content to Darkbeam at a rather high framerate. I managed to show a little video in real-time.
+When implemented as a streaming device, you can stream arbitrary image and video content to Darkbeam (use a 64x32 display to get a higher framerate). I managed to show a little video in real-time.
 
 The drawback may be that it's harder to interface with Home Assistant. You'll need your own little script running on some computer in your network, transmitting frame data to Darkbeam.
 
